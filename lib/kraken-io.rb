@@ -41,11 +41,6 @@ module Kraken
       end
     end
 
-    def callback_url(url)
-      @callback_url = url
-      self
-    end
-
     def upload(file_name, params = {})
       params = normalized_params(params).merge!(auth_hash)
       call_kraken do

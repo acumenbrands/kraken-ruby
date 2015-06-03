@@ -181,7 +181,7 @@ describe Kraken::API do
     context 'with default parameters' do
        let(:expected_params) do
           base_params.reverse_merge({
-            s3: {
+            s3_store: {
               bucket: 'images.s3-bucket.com',
               key: 3,
               secret: 4
@@ -198,7 +198,7 @@ describe Kraken::API do
     context 'with acls' do
       let(:expected_params) do
         base_params.reverse_merge({
-          s3: {
+          s3_store: {
             acl: 'private',
             bucket: 'images.s3-bucket.com',
             key: 3,
@@ -226,7 +226,7 @@ describe Kraken::API do
     context 'with specific path' do
       let(:expected_params) do
         base_params.reverse_merge({
-          s3: {
+          s3_store: {
             bucket: 'images.s3-bucket.com',
             key: 3,
             path: '/something/a/thing.jpg',

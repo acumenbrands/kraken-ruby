@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'rspec/its'
 require 'bundler/setup'
 
 ROOT = File.expand_path('../..', __FILE__)

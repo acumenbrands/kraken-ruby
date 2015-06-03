@@ -69,7 +69,7 @@ module Kraken
 
       params[:lossy]        = true if @lossy
       params[:webp]         = true if @webp
-      params[:s3]           = Hash[@s3.sort] if @s3
+      params[:s3_store]     = Hash[@s3.sort] if @s3
       params[:cf_store]     = Hash[@rackspace.sort] if @rackspace
       params[:callback_url] = @callback_url if @callback_url
       params[:resize]       = Hash[@resize.sort] if @resize
